@@ -1,5 +1,6 @@
+"use client"
+
 import React, { useState } from "react"
-import { useFormStatus } from "react-dom"
 
 const SubmitButton = () => {
   const [isLoading] = useState(false)

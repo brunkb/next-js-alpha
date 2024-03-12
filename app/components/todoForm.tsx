@@ -14,7 +14,7 @@ const TodoForm = () => {
 
     setTodoItems((todoItems) => [...todoItems, todoItem])
 
-    console.log(`called the handleSubmit: ${todoItems}`)
+    console.log(`called the handleSubmit: ${todoItem}`)
   }
 
   return (
@@ -34,8 +34,8 @@ const TodoForm = () => {
       </div>
       <div>
         <ul>
-          {todoItems.map((todoItem) => (
-            <li>{todoItem}</li>
+          {todoItems.map((todoItem, index) => (
+            <li key={index}>{todoItem}</li>
           ))}
         </ul>
       </div>
