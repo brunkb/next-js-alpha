@@ -5,7 +5,7 @@ import TodoFormAdvanced from "../components/todoFormAdv"
 const TodoPage2 = () => {
   return (
     <div>
-      <h2 className="text-primary text-2xl text-center">New Advnced Todo Item</h2>
+      <h2 className="text-primary text-2xl text-center">New Advanced Todo Item</h2>
       <TodoFormAdvanced />
     </div>
   )

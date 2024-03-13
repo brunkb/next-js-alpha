@@ -13,7 +13,7 @@ const TodoFormAdvanced = () => {
   return (
     <div className="grid">
       <div className="flow">
-        <form>
+        <form action={formAction}>
           <div className="mt-2">
             <label className="text-xl font-bold pl-4" htmlFor="todo">
               Enter Task:
@@ -30,14 +30,32 @@ const TodoFormAdvanced = () => {
               <textarea name="desc"></textarea>
             </span>
           </div>
+         
           <div className="mt-4">
-            <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-              formAction={formAction}
-              type="submit"
-            >
-              Add Task
-            </button>
+            <label className="text-xl font-bold pl-4" htmlFor="todo">
+              Status:
+            </label>
+          </div>
+          <div className="radio ml-5">
+            <label>
+              <input className="mr-2" type="radio" name="rg1" value="not-done" />
+              Not Done
+            </label>
+          </div>
+          <div className="radio ml-5">
+            <label>
+              <input className="mr-2" type="radio" name="rg1" value="done" />
+              Done
+            </label>
+          </div>
+          <div className="radio ml-5">
+            <label>
+              <input className="mr-2" type="radio" name="rg1" value="blocked" />
+              Blocked
+            </label>
+          </div>
+          <div className="mt-4">
+            <SubmitButton />
           </div>
         </form>
       </div>
@@ -48,6 +66,8 @@ const TodoFormAdvanced = () => {
               {item.todo}
               {": "}
               {item.description}
+              {'  '}
+              {item.status}
             </li>
           ))}
         </ul>
