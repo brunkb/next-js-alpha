@@ -10,7 +10,7 @@ const Header = () => {
         <nav className="flex items-center justify-between flex-wrap bg-gray-800 p-1 fixed w-full z-10 top-0">
           <div className="flex items-center flex-shrink-0 text-white mr-6">
             <a className="text-white no-underline hover:text-white hover:no-underline" href="#">
-              <Image src={logo} alt="Logo" height={180} width={350} />
+              {/* <Image src={logo} alt="Logo" height={180} width={350} /> */}<h1 className="text-3xl">Todo App</h1>
             </a>
           </div>
 
@@ -44,15 +44,15 @@ const Header = () => {
                   className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
                   href="/todoForm"
                 >
-                  Adv Todo
+                  Add Todos
                 </Link>
               </li>
               <li className="mr-3">
                 <Link
                   className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-                  href="/testform"
+                  href="/todoList"
                 >
-                  Test Form
+                  My Todos
                 </Link>
               </li>
             </ul>

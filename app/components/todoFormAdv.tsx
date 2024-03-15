@@ -23,7 +23,7 @@ const TodoFormAdvanced = () => {
             </span>
           </div>
           <div className="mt-4">
-            <label className="text-xl font-bold pl-4" htmlFor="todo">
+            <label className="text-xl font-bold pl-4 align-top" htmlFor="todo">
               Enter Description:
             </label>
             <span className="pl-3">
@@ -59,7 +59,7 @@ const TodoFormAdvanced = () => {
           </div>
         </form>
       </div>
-      <div className="mt-4">
+      {/* <div className="mt-4">
         <ul>
           {data.map((item, index) => (
             <li key={index}>
@@ -71,7 +71,7 @@ const TodoFormAdvanced = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
     </div>
   )
 }

@@ -6,6 +6,11 @@ export type TodoItemType = {
   status: string
 }
 
+// const preventDefault = f => e => {
+//     e.preventDefault()
+//     f(e)
+//   }
+
 export async function handleAdvSubmit(prevState: Array<TodoItemType>, formData: FormData) {
   const todoFormData = formData.get("nexttodo")
   const descriptionFormData = formData.get("desc")

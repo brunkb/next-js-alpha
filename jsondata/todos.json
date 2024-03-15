@@ -1,0 +1,22 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "todo": "Laundry",
+      "desc": "kids' clothes",
+      "status": "not-done"
+    },
+    {
+      "id": "2",
+      "todo": "Vacuum basement",
+      "desc": "lots of dust",
+      "status": "not-done"
+    },
+    {
+      "id": "3",
+      "todo": "Cook",
+      "desc": "make chili",
+      "status": "done"
+    }
+  ]
+}
