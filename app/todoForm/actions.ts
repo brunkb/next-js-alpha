@@ -1,15 +1,12 @@
 "use server"
 
+import { redirect } from 'next/navigation'
+
 export type TodoItemType = {
   todo: string
   description: string
   status: string
 }
-
-// const preventDefault = f => e => {
-//     e.preventDefault()
-//     f(e)
-//   }
 
 export async function handleAdvSubmit(prevState: Array<TodoItemType>, formData: FormData) {
   const todoFormData = formData.get("nexttodo")
@@ -42,9 +39,11 @@ export async function handleAdvSubmit(prevState: Array<TodoItemType>, formData: 
     status: stat,
   }
 
-  prevState.push(todoItem)
+  //prevState.push(todoItem)
 
   console.log(`processing todo item ${todo}`)
+
+  redirect("/todoList")
 
   return prevState
 }

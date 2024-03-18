@@ -10,7 +10,7 @@
       "id": "2",
       "todo": "Vacuum basement",
       "desc": "lots of dust",
-      "status": "not-done"
+      "status": "blocked"
     },
     {
       "id": "3",
